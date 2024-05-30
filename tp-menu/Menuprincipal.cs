@@ -65,11 +65,11 @@ namespace Menu
                 {
                     case ConsoleKey.RightArrow:
                         currentMenuIndex = (currentMenuIndex + 1) % menus.Count;
-                        currentItemIndex = 0; // Reset item index when changing menu
+                        currentItemIndex = 0; 
                         break;
                     case ConsoleKey.LeftArrow:
                         currentMenuIndex = (currentMenuIndex - 1 + menus.Count) % menus.Count;
-                        currentItemIndex = 0; // Reset item index when changing menu
+                        currentItemIndex = 0; 
                         break;
                     case ConsoleKey.DownArrow:
                         currentItemIndex = (currentItemIndex + 1) % menus[currentMenuIndex].items.Length;
