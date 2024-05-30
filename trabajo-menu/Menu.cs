@@ -1,8 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Menu
+namespace ejer2
 {
+    class Menu
+    {
+        public string[] items;
+        public string nombreMenu;
+        public int posMenu;
+
+        public Menu(int posMenu, string nombreMenu, string[] opciones)
+        {
+            this.items = opciones;
+            this.nombreMenu = nombreMenu;
+            this.posMenu = posMenu;
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
