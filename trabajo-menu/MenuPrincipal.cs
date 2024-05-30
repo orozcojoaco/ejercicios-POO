@@ -69,11 +69,19 @@ namespace ejer2
                 {
                     case ConsoleKey.RightArrow:
                         currentMenuIndex = (currentMenuIndex + 1) % menus.Count;
+<<<<<<< HEAD:trabajo-menu/MenuPrincipal.cs
                         currentItemIndex = 0;
                         break;
                     case ConsoleKey.LeftArrow:
                         currentMenuIndex = (currentMenuIndex - 1 + menus.Count) % menus.Count;
                         currentItemIndex = 0;
+=======
+                        currentItemIndex = 0; 
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        currentMenuIndex = (currentMenuIndex - 1 + menus.Count) % menus.Count;
+                        currentItemIndex = 0; 
+>>>>>>> ad51da88b7ceb1947e26cd566def01853e7e8d1d:tp-menu/Menuprincipal.cs
                         break;
                     case ConsoleKey.DownArrow:
                         currentItemIndex = (currentItemIndex + 1) % menus[currentMenuIndex].items.Length;
